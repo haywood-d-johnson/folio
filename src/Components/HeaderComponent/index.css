@@ -3,6 +3,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    width: 800px;
+    align-self: center;
 }
 
 nav {
@@ -11,20 +13,21 @@ nav {
 }
 
 nav a {
+    display: flex;
     text-decoration: none;
-    color: #333;
+    color: var(--thunder);
     font-weight: 500;
     padding: 10px;
     border-radius: 5px;
-    justify-content: flex-end;
+    align-items: center;
 }
 
 nav a:hover {
-    background-color: #f0f0f0;
+    background-color: var(--tan);
 }
 
 .nav_title {
-    color: #333;
+    color: var(--thunder);
     font-weight: 500;
 }
 
@@ -35,13 +38,11 @@ nav a:hover {
         align-items: center;
         gap: 20px;
     }
-
     nav a {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
     nav a:before {
         content: "";
         display: inline-block;

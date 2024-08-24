@@ -1,5 +1,16 @@
+:root {
+    --ironstone: #874e3a;
+    --tan: #cda07c;
+    --gallery: #eeeeee;
+    --jelly-bean: #227c96;
+    --thunder: #353135;
+}
+
 .App {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 body {
@@ -7,5 +18,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    background-color: var(--gallery);
+    font-weight: 500;
+}
+
+.rounded-img {
+    align-self: center;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: 1rem;
 }

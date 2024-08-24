@@ -1,0 +1,20 @@
+.skills-column {
+    border: 5px solid var(--jelly-bean);
+    border-radius: 10%;
+    padding: 0;
+    color: var(--jelly-bean);
+    background-color: var(--tan);
+    text-decoration: none;
+    margin: 1rem auto;
+    height: 300px;
+    width: 250px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,7 @@
+.skills-container.horizontal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-flow: column;
+    flex: 1;
+}
