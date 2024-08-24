@@ -1,0 +1,13 @@
+.download-cv-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--thunder);
+    font-weight: 500;
+}
+
+.download-cv-button:hover {
+    background-color: var(--tan);
+}

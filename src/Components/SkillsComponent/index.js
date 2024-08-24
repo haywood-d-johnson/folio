@@ -2,6 +2,7 @@ import React from "react";
 import SkillsColumn from "./SkillsColumnComponent";
 
 import "./index.css";
+import DownloadCVButton from "../ButtonComponent";
 
 function SkillsContainer() {
     const programmingSkills = [
@@ -52,7 +53,6 @@ function SkillsContainer() {
             />
             <SkillsColumn title="IT Support" skills={itSuport} />
             <SkillsColumn title="IT Support" skills={itSuport} />
-            {/* ... other columns ... */}
         </div>
     );
 }
