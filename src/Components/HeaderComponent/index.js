@@ -1,6 +1,4 @@
 import React from "react";
-import "./index.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faPuzzlePiece,
@@ -9,26 +7,29 @@ import {
     faCertificate,
     faCalendarDays,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
+
+import "./index.css";
 
 function HeaderComponent() {
     return (
         <header>
             <nav className="nav_title">HJ</nav>
             <nav>
-                <a href="#">
+                <Link to="about" smooth duration={500}>
                     <FontAwesomeIcon
                         icon={faPuzzlePiece}
                         style={{ margin: "5px" }}
                     />
                     About
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="skills" smooth duration={500}>
                     <FontAwesomeIcon
                         icon={faToolbox}
                         style={{ margin: "5px" }}
                     />
                     Skills
-                </a>
+                </Link>
                 <a href="#">
                     <FontAwesomeIcon
                         icon={faRocket}

@@ -21,7 +21,10 @@ function Introduction() {
             </div>
             <div class="intro">
                 Or, you can contact me at{` `}
-                <a href="mailto:haywood.d.johnson@gmail.com">
+                <a
+                    href="mailto:haywood.d.johnson@gmail.com"
+                    style={{ textDecoration: "none", color: "#874e3a" }}
+                >
                     haywood.d.johnson@gmail.com
                 </a>
             </div>

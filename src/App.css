@@ -39,3 +39,7 @@ body {
 .button-section {
     width: auto;
 }
+
+.about-header {
+    color: var(--thunder);
+}
