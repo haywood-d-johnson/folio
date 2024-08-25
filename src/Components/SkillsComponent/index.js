@@ -1,58 +1,69 @@
 import React from "react";
 import SkillsColumn from "./SkillsColumnComponent";
 
+import {
+    faGears,
+    faWandMagicSparkles,
+    faRobot,
+} from "@fortawesome/free-solid-svg-icons";
+
 import "./index.css";
-import DownloadCVButton from "../ButtonComponent";
 
 function SkillsContainer() {
-    const programmingSkills = [
-        "JavaScript",
-        "PHP",
-        "Python",
-        "Java",
-        "C/C++",
-        "VB/C#",
-    ];
-
-    const frameLib = [
-        "React",
-        "React Native",
-        "NodeJS",
-        "J-Query",
+    //Back-End DEV
+    const BEDevDescription =
+        "Skilled backend engineer with a strong foundation in API design and development, coupled with a proven track record in utilizing version control for efficient collaboration.";
+    const BEDevSkills = ["PHP", "Python", "Java", "C/C++", "C#"];
+    const BEDevToolsList = [
         "Django",
-        "C#/.NET/ASP.NET",
-        "MVC",
+        "Node.Js",
+        ".NET/ASP.NET",
+        "SQL/NoSQL DBMS",
     ];
 
-    const dbms = ["Oracle RDBMS", "SQL Server", "MySQL", "MSSQL", "MongoDB"];
-
-    const testingAutmation = [
+    //Front-End DEV
+    const FEDevDescription =
+        "Proficient front-end engineer with a deep understanding of web standards and best practices, capable of delivering high-quality and performant user experiences.";
+    const FEDevSkills = ["Javascript", "HTML", "CSS", "Pug"];
+    const FEDevToolsList = [
+        "ReactJS",
+        "React Native",
+        "AngularJS",
+        "J-Query",
+        "MochaJS/Jest",
+        "Playwright",
         "Selenium",
-        "JMeter",
-        "Postman",
-        "Jenkins",
-        "VMWare",
-        "Mocha",
-        "Chai",
-        "Jest",
+        "GitHub",
     ];
-    const itSuport = ["ITIL v3", "ServiceNow", "ITSM"];
-    // Electronics & IoT: Arduino, Raspberry Pi, Circuit Design
+
+    const IoTDevDescription =
+        "Innovative electronics engineer specializing in designing and developing cutting-edge IoT devices with knowledge in hardware design, microcontroller programming, and wireless communication protocols.";
+    const IoTDevSkills = ["Arduino", "Python", "C/C++"];
+    const IoTDevToolsList = ["Arduino", "Raspberry Pi", "Circuit Design"];
 
     return (
         <div className="skills-container horizontal">
             <SkillsColumn
-                title="Programming Languages"
-                skills={programmingSkills}
+                icon={faGears}
+                title="Back-End Development"
+                skills={BEDevSkills}
+                description={BEDevDescription}
+                toolsList={BEDevToolsList}
             />
-            <SkillsColumn title="Frameworks/Libraries" skills={frameLib} />
-            <SkillsColumn title="Database Management" skills={dbms} />
             <SkillsColumn
-                title="Testing/Automation"
-                skills={testingAutmation}
+                icon={faWandMagicSparkles}
+                title="Front-End Development"
+                skills={FEDevSkills}
+                description={FEDevDescription}
+                toolsList={FEDevToolsList}
             />
-            <SkillsColumn title="IT Support" skills={itSuport} />
-            <SkillsColumn title="IT Support" skills={itSuport} />
+            <SkillsColumn
+                icon={faRobot}
+                title="Electronics & IoT"
+                skills={IoTDevSkills}
+                description={IoTDevDescription}
+                toolsList={IoTDevToolsList}
+            />
         </div>
     );
 }

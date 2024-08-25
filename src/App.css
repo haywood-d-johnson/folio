@@ -29,3 +29,13 @@ body {
     height: 300px;
     margin-top: 1rem;
 }
+
+.skills-header {
+    z-index: 1;
+    color: var(--thunder);
+    padding-top: 2rem;
+}
+
+.button-section {
+    width: auto;
+}
