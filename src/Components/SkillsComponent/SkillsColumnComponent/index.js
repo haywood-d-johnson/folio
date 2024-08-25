@@ -23,15 +23,19 @@ function SkillsColumn({ title, skills, description, toolsList, icon }) {
 }
 
 function convertToCommaSeparatedList(items) {
-    return items
-        .map((item, index) => {
-            if (index === items.length - 1) {
-                return item;
-            } else {
-                return `${item}, `;
-            }
-        })
-        .join("");
+    if (items.length === 2) {
+        return items.join(" and ");
+    } else {
+        return items
+            .map((item, index) => {
+                if (index === items.length - 1) {
+                    return item;
+                } else {
+                    return `${item}, `;
+                }
+            })
+            .join("");
+    }
 }
 
 export default SkillsColumn;

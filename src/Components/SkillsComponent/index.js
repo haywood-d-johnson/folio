@@ -5,6 +5,7 @@ import {
     faGears,
     faWandMagicSparkles,
     faRobot,
+    faShield,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./index.css";
@@ -36,10 +37,17 @@ function SkillsContainer() {
         "GitHub",
     ];
 
+    // Electronics & IoT
     const IoTDevDescription =
         "Innovative electronics engineer specializing in designing and developing cutting-edge IoT devices with knowledge in hardware design, microcontroller programming, and wireless communication protocols.";
     const IoTDevSkills = ["Arduino", "Python", "C/C++"];
     const IoTDevToolsList = ["Arduino", "Raspberry Pi", "Circuit Design"];
+
+    // IT Support
+    const ITDescription =
+        "Customer-oriented IT Support specialist with a passion for helping others. Able to provide technical assistance and support for a wide range of IT systems, ensuring optimal performance and user satisfaction.";
+    const ITSkills = ["ITIL v3", "ITSM"];
+    const ITToolsList = ["ServiceNow"];
 
     return (
         <div className="skills-container horizontal">
@@ -63,6 +71,13 @@ function SkillsContainer() {
                 skills={IoTDevSkills}
                 description={IoTDevDescription}
                 toolsList={IoTDevToolsList}
+            />
+            <SkillsColumn
+                icon={faShield}
+                title="IT Support"
+                skills={ITSkills}
+                description={ITDescription}
+                toolsList={ITToolsList}
             />
         </div>
     );
