@@ -12,6 +12,7 @@ import {
 } from "./Components/EducationComponent";
 
 import "./App.css";
+import WorkExperienceSection from "./Components/WorkExperienceComponent/EducationComponent";
 
 function App() {
     return (
@@ -45,10 +46,10 @@ function App() {
                 <div className="certification-container">
                     <h3 className="certification-header">CERTIFICATIONS</h3>
                     <CertificationSection />
-                </div>
-                <div className="experience-conainer">
-                    <h3 className="expeience-header">EXPERIENCE</h3>
-                    <ExperienceSection />
+                </div>{" "}
+                <div className="certification-container">
+                    <h3 className="certification-header">Experience</h3>
+                    <WorkExperienceSection />
                 </div>
             </section>
         </div>

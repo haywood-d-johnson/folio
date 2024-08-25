@@ -4,6 +4,8 @@ import "./index.css";
 
 import { ProjectImage, ProjectDetails } from "./ProjectComponent";
 
+import ProjectsOverlay from "./ProjectOverlayComponent";
+
 function ProjectsSection() {
     const projects = [
         {
@@ -25,21 +27,23 @@ function ProjectsSection() {
 
     return (
         <section className="projects-section">
-            <div className="project-grid">
-                {projects.map((project, index) => (
-                    <div className="project-grid-item" key={index}>
-                        <ProjectImage
-                            imageUrl={project.imageUrl}
-                            alt={project.title}
-                        />
-                        <ProjectDetails
-                            title={project.title}
-                            description={project.description}
-                            techStack={project.techStack}
-                        />
-                    </div>
-                ))}
-            </div>
+            <ProjectsOverlay className="projects-overlay">
+                <div className="project-grid">
+                    {projects.map((project, index) => (
+                        <div className="project-grid-item" key={index}>
+                            <ProjectImage
+                                imageUrl={project.imageUrl}
+                                alt={project.title}
+                            />
+                            <ProjectDetails
+                                title={project.title}
+                                description={project.description}
+                                techStack={project.techStack}
+                            />
+                        </div>
+                    ))}
+                </div>
+            </ProjectsOverlay>
         </section>
     );
 }

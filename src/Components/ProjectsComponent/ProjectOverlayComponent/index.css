@@ -1,0 +1,13 @@
+.projects-overlay {
+    position: absolute;
+    top: 1785px;
+    left: 470px;
+    width: 50%;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: white;
+}

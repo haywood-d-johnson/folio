@@ -1,61 +1,50 @@
 import React from "react";
-import { ExperienceItem } from "./EducationItem";
+import { WorkExperienceItem } from "./WorkExperienceItem";
 
 import "./index.css";
 
-function EducationSection() {
+function WorkExperienceSection() {
     const education = [
         {
-            year: "August 2024",
-            title: "Bachelor of Science in Computer Science",
-            details: "Colorado Technical Institute",
+            syear: "January 2023",
+            eyear: "Present",
+            title: "Junior Programmer",
+            details: "CTDI",
         },
         {
-            year: "April 2022",
-            title: "Associates of Applied Science in Computer Programming",
-            details: "Texas State Technical College",
+            syear: "March 2022",
+            eyear: "May 2024",
+            title: "Senior Software Developer",
+            details: "IDo Systems",
+        },
+        {
+            syear: "January 2023",
+            eyear: "Present",
+            title: "Junior Programmer",
+            details: "CTDI",
+        },
+        {
+            syear: "January 2023",
+            eyear: "Present",
+            title: "Junior Programmer",
+            details: "CTDI",
         },
     ];
 
     return (
-        <section className="experience-section">
-            <div className="experience-grid">
+        <section className="work-experience-section">
+            <div className="work-experience-grid">
                 {education.map((edu, index) => (
-                    <ExperienceItem key={index} {...edu} />
+                    <WorkExperienceItem key={index} {...edu} />
                 ))}
             </div>
         </section>
     );
 }
 
-function CertificationSection() {
-    const education = [
-        {
-            year: "August 2024",
-            title: "Bachelor of Science in Computer Science",
-            details: "Colorado Technical Institute",
-        },
-        {
-            year: "April 2022",
-            title: "Associates of Applied Science in Computer Programming",
-            details: "Texas State Technical College",
-        },
-    ];
+export default WorkExperienceSection;
 
-    return (
-        <section className="experience-section">
-            <div className="experience-grid">
-                {education.map((edu, index) => (
-                    <ExperienceItem key={index} {...edu} />
-                ))}
-            </div>
-        </section>
-    );
-}
-
-export { EducationSection, CertificationSection };
-
-// CTDI - Flower Mound, TX January 2023 – present
+//  - Flower Mound, TX January 2023 – present
 // Junior Programmer
 // IDo Systems - Remote March 2022 – May 2024
 // Senior Software Developer
