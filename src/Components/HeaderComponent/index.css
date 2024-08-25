@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0 10px 0;
     width: 800px;
     align-self: center;
 }
@@ -24,32 +24,10 @@ nav a {
 
 nav a:hover {
     background-color: var(--tan);
+    color: white;
 }
 
 .nav_title {
-    color: var(--thunder);
-    font-weight: 500;
-}
-
-@media (max-width: 768px) {
-    nav {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        align-items: center;
-        gap: 20px;
-    }
-    nav a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    nav a:before {
-        content: "";
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-color: #f0f0f0;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
+    width: 50px;
+    height: 50px;
 }

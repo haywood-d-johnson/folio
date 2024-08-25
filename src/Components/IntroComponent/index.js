@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./index.css";
+import SocialMediaLinks from "../SocialBarComponent";
 
 function Introduction() {
     return (

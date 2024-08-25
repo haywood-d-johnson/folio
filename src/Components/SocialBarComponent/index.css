@@ -1,0 +1,30 @@
+.social-media-links {
+    display: flex;
+    gap: 10px;
+    /* Adjust the gap as needed */
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.social-media-links a {
+    color: var(--jelly-bean);
+    padding: 5px;
+    border-radius: 50%;
+    width: auto;
+    border: 1px solid var(--jelly-bean);
+    text-decoration: none;
+    transition: var(--jelly-bean) 0.5sec ease-out;
+}
+
+.social-media-links a:hover {
+    color: white;
+    background-color: var(--jelly-bean);
+}
+
+.sml-cotainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

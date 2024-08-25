@@ -14,7 +14,9 @@ import "./index.css";
 function HeaderComponent() {
     return (
         <header>
-            <nav className="nav_title">HJ</nav>
+            <nav className="nav_title">
+                <img src="/BlackBoxSoftLogo.png" alt="BBSLogo" />
+            </nav>
             <nav>
                 <Link to="about" smooth duration={500}>
                     <FontAwesomeIcon

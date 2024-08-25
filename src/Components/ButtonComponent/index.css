@@ -1,16 +1,25 @@
 .download-cv-button {
     background-color: #f0f0f0;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 5px;
     cursor: pointer;
     color: var(--thunder);
     font-weight: 500;
     text-decoration: none;
-    width: 100px;
+    width: 150px;
     align-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 .download-cv-button:hover {
     background-color: var(--tan);
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }

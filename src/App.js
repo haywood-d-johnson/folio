@@ -5,6 +5,7 @@ import SkillsContainer from "./Components/SkillsComponent";
 import DownloadCVButton from "./Components/ButtonComponent";
 
 import "./App.css";
+import SocialMediaLinks from "./Components/SocialBarComponent";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     className="rounded-img"
                 />
                 <Introduction />
+                <SocialMediaLinks />
             </section>
             <section id="skills">
                 <h2 className="skills-header">SKILLS</h2>
