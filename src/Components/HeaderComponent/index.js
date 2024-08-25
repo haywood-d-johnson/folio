@@ -32,13 +32,13 @@ function HeaderComponent() {
                     />
                     Skills
                 </Link>
-                <a href="#">
+                <Link to="projects" smooth duration={500}>
                     <FontAwesomeIcon
                         icon={faRocket}
                         style={{ margin: "5px" }}
                     />
                     Projects
-                </a>
+                </Link>
                 <a href="#">
                     <FontAwesomeIcon
                         icon={faCertificate}

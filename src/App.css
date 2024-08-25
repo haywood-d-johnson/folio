@@ -20,6 +20,7 @@ body {
     align-items: center;
     background-color: var(--gallery);
     font-weight: 500;
+    color: var(--thunder);
 }
 
 .rounded-img {
@@ -31,8 +32,6 @@ body {
 }
 
 .skills-header {
-    z-index: 1;
-    color: var(--thunder);
     padding-top: 2rem;
 }
 
@@ -41,6 +40,7 @@ body {
 }
 
 .about-header {
-    color: var(--thunder);
     font-size: xx-large;
 }
+
+.projects-header {}

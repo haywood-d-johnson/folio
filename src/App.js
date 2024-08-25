@@ -6,6 +6,7 @@ import DownloadCVButton from "./Components/ButtonComponent";
 
 import "./App.css";
 import SocialMediaLinks from "./Components/SocialBarComponent";
+import ProjectsSection from "./Components/ProjectsComponent";
 
 function App() {
     return (
@@ -25,6 +26,10 @@ function App() {
                 <h2 className="skills-header">SKILLS</h2>
                 <SkillsContainer className="skills-section" />
                 <DownloadCVButton className="button-section" />
+            </section>
+            <section id="projects">
+                <h2 className="projects-header">Projects</h2>
+                <ProjectsSection />
             </section>
         </div>
     );

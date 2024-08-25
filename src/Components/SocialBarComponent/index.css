@@ -12,7 +12,6 @@
     color: var(--jelly-bean);
     padding: 5px;
     border-radius: 50%;
-    width: auto;
     border: 1px solid var(--jelly-bean);
     text-decoration: none;
     transition: var(--jelly-bean) 0.5sec ease-out;
@@ -27,4 +26,11 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.sm-bubble {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
