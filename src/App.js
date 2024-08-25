@@ -3,10 +3,15 @@ import RoundedImage from "./Components/ImageComponent";
 import Introduction from "./Components/IntroComponent";
 import SkillsContainer from "./Components/SkillsComponent";
 import DownloadCVButton from "./Components/ButtonComponent";
-
-import "./App.css";
 import SocialMediaLinks from "./Components/SocialBarComponent";
 import ProjectsSection from "./Components/ProjectsComponent";
+import {
+    EducationSection,
+    ExperienceSection,
+    CertificationSection,
+} from "./Components/EducationComponent";
+
+import "./App.css";
 
 function App() {
     return (
@@ -28,8 +33,23 @@ function App() {
                 <DownloadCVButton className="button-section" />
             </section>
             <section id="projects">
-                <h2 className="projects-header">Projects</h2>
+                <h2 className="projects-header">PROJECTS</h2>
                 <ProjectsSection />
+            </section>
+            <section id="experience">
+                <h2 className="projects-header">EXPERIENCE</h2>
+                <div className="education-container">
+                    <h3 className="education-header">EDUCATION</h3>
+                    <EducationSection />
+                </div>
+                <div className="certification-container">
+                    <h3 className="certification-header">CERTIFICATIONS</h3>
+                    <CertificationSection />
+                </div>
+                <div className="experience-conainer">
+                    <h3 className="expeience-header">EXPERIENCE</h3>
+                    <ExperienceSection />
+                </div>
             </section>
         </div>
     );

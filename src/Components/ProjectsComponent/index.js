@@ -11,12 +11,14 @@ function ProjectsSection() {
             description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             imageUrl: "path/to/project1.jpg",
+            techStack: ["test"],
         },
         {
             title: "Project 2",
             description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             imageUrl: "path/to/project2.jpg",
+            techStack: ["test"],
         },
         // Add more projects here
     ];
@@ -33,6 +35,7 @@ function ProjectsSection() {
                         <ProjectDetails
                             title={project.title}
                             description={project.description}
+                            techStack={project.techStack}
                         />
                     </div>
                 ))}

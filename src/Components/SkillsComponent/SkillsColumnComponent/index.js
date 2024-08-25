@@ -22,7 +22,7 @@ function SkillsColumn({ title, skills, description, toolsList, icon }) {
     );
 }
 
-function convertToCommaSeparatedList(items) {
+export function convertToCommaSeparatedList(items) {
     if (items.length === 2) {
         return items.join(" and ");
     } else {

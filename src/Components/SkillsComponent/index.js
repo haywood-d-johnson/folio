@@ -41,7 +41,13 @@ function SkillsContainer() {
     const IoTDevDescription =
         "Innovative electronics engineer specializing in designing and developing cutting-edge IoT devices with knowledge in hardware design, microcontroller programming, and wireless communication protocols.";
     const IoTDevSkills = ["Arduino", "Python", "C/C++"];
-    const IoTDevToolsList = ["Arduino", "Raspberry Pi", "Circuit Design"];
+    const IoTDevToolsList = [
+        "Arduino",
+        "Raspberry Pi",
+        "Circuit Design",
+        "Artificial Inteligence",
+        "Machine Learning",
+    ];
 
     // IT Support
     const ITDescription =

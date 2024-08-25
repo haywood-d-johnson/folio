@@ -1,5 +1,7 @@
 import React from "react";
 
+import { convertToCommaSeparatedList } from "../../SkillsComponent/SkillsColumnComponent";
+
 import "./index.css";
 
 export function ProjectImage({ imageUrl, alt }) {
@@ -10,11 +12,15 @@ export function ProjectImage({ imageUrl, alt }) {
     );
 }
 
-export function ProjectDetails({ title, description }) {
+export function ProjectDetails({ title, description, techStack }) {
+    const stackList = convertToCommaSeparatedList(techStack);
+
     return (
         <div className="project-details">
             <h3>{title}</h3>
             <p>{description}</p>
+            <h3>Technologies Stack:</h3>
+            <p>{stackList}</p>
         </div>
     );
 }

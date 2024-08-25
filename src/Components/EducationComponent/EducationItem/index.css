@@ -1,0 +1,36 @@
+.experience-item {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "experience-item-year experience-item-title" "experience-item-year experience-item-details";
+    background-color: white;
+}
+
+.experience-item-details {
+    grid-area: experience-item-details;
+    border: 2px solid var(--jelly-bean);
+    margin: 0;
+    padding: 5px;
+}
+
+.experience-item-title {
+    grid-area: experience-item-title;
+    border: 2px solid var(--jelly-bean);
+    margin: 0;
+    padding: 5px;
+}
+
+.experience-item-year {
+    grid-area: experience-item-year;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--jelly-bean);
+    margin: 0;
+    font-weight: bold;
+    font-size: x-large;
+    color: var(--tan);
+    padding: 5px;
+}
