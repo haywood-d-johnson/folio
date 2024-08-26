@@ -1,0 +1,50 @@
+.event-card {
+    border: 5px solid var(--jelly-bean);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.event-card a {
+    text-decoration: none;
+    color: var(--thunder);
+    transition: color 2s;
+}
+
+.event-card-type {
+    color: var(--tan);
+}
+
+.event-card-title {
+    color: var(--thunder);
+}
+
+.event-card-date {
+    color: var(--thunder);
+}
+
+.event-card-location {
+    color: var(--thunder);
+}
+
+.event-card-time {
+    color: var(--tan);
+}
+
+.event-card:hover {
+    background-color: var(--thunder);
+}
+
+.event-card:hover .event-card-title {
+    color: var(--westar);
+}
+
+.event-card:hover .event-card-date {
+    color: var(--westar);
+}
+
+.event-card:hover .event-card-location {
+    color: var(--westar);
+}

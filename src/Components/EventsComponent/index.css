@@ -1,0 +1,11 @@
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.events-section {
+    margin: 40px 2rem;
+    display: flex;
+    justify-content: center;
+}

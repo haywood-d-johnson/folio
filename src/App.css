@@ -4,6 +4,7 @@
     --gallery: #eeeeee;
     --jelly-bean: #227c96;
     --thunder: #353135;
+    --westar: #e8e6e3;
 }
 
 .App {
@@ -41,7 +42,4 @@ body {
 
 .about-header {
     font-size: xx-large;
-}
-
-.projects-header {
 }

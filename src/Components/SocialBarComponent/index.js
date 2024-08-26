@@ -5,6 +5,7 @@ import {
     faXTwitter,
     faLinkedinIn,
     faYoutube,
+    faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 import "./index.css";
@@ -45,6 +46,14 @@ function SocialMediaLinks() {
                     className="sm-bubble"
                 >
                     <FontAwesomeIcon icon={faYoutube} size="lg" />
+                </a>
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="sm-bubble"
+                >
+                    <FontAwesomeIcon icon={faGithub} size="lg" />
                 </a>
             </div>
         </div>

@@ -46,13 +46,13 @@ function HeaderComponent() {
                     />
                     Experience
                 </Link>
-                <a href="#">
+                <Link to="events" smooth duration={500}>
                     <FontAwesomeIcon
                         icon={faCalendarDays}
                         style={{ margin: "5px" }}
                     />
                     Events
-                </a>
+                </Link>
             </nav>
         </header>
     );

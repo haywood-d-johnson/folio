@@ -11,7 +11,7 @@
     align-self: center;
     display: flex;
     justify-content: center;
-    transition: var(--tan) 0.5sec ease-out;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .download-cv-button:hover {

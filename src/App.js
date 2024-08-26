@@ -7,12 +7,13 @@ import SocialMediaLinks from "./Components/SocialBarComponent";
 import ProjectsSection from "./Components/ProjectsComponent";
 import {
     EducationSection,
-    ExperienceSection,
     CertificationSection,
 } from "./Components/EducationComponent";
+import WorkExperienceSection from "./Components/WorkExperienceComponent/EducationComponent";
+import EventsSection from "./Components/EventsComponent";
+import FooterSection from "./Components/FooterComponent";
 
 import "./App.css";
-import WorkExperienceSection from "./Components/WorkExperienceComponent/EducationComponent";
 
 function App() {
     return (
@@ -51,6 +52,13 @@ function App() {
                     <h3 className="certification-header">WORK EXPERIENCE</h3>
                     <WorkExperienceSection />
                 </div>
+            </section>
+            <section id="events">
+                <h2 className="projects-header">EVENTS</h2>
+                <EventsSection />
+            </section>
+            <section id="footer">
+                <FooterSection />
             </section>
         </div>
     );

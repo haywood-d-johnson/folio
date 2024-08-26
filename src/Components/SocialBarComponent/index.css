@@ -14,7 +14,7 @@
     border-radius: 50%;
     border: 1px solid var(--jelly-bean);
     text-decoration: none;
-    transition: var(--jelly-bean) 0.5sec ease-out;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .social-media-links a:hover {

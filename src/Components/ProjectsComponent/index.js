@@ -6,7 +6,16 @@ import { ProjectImage, ProjectDetails } from "./ProjectComponent";
 import ComingSoonComponent from "../ComingSoonComponent";
 
 function ProjectsSection() {
-    const projects = [];
+    const projects = [
+        // template
+        // {
+        //     title: "Project 1",
+        //     description:
+        //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        //     imageUrl: "path/to/project1.jpg",
+        //     techStack: ["test"],
+        // },
+    ];
 
     return (
         <section className="projects-section">
