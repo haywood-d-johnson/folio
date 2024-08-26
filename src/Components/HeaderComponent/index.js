@@ -17,7 +17,7 @@ function HeaderComponent() {
             <nav className="nav_title">
                 <img src="/BlackBoxSoftLogo.png" alt="BBSLogo" />
             </nav>
-            <nav>
+            <nav className="nav-links">
                 <Link to="about" smooth duration={500}>
                     <FontAwesomeIcon
                         icon={faPuzzlePiece}
