@@ -9,13 +9,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 
+import NavLink from "./NavLinkComponent";
+
 import "./index.css";
 
 function HeaderComponent() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 786);
 
-    // Handle window resize to detect mobile view
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 786);
@@ -23,7 +24,6 @@ function HeaderComponent() {
 
         window.addEventListener("resize", handleResize);
 
-        // Cleanup the event listener on component unmount
         return () => {
             window.removeEventListener("resize", handleResize);
         };
@@ -45,41 +45,33 @@ function HeaderComponent() {
 
                 {!isMobile && (
                     <nav className="nav-links">
-                        <Link to="about" smooth duration={500}>
-                            <FontAwesomeIcon
+                        <nav className="nav-links">
+                            <NavLink
                                 icon={faPuzzlePiece}
-                                style={{ margin: "5px" }}
+                                text="About"
+                                to="about"
                             />
-                            About
-                        </Link>
-                        <Link to="skills" smooth duration={500}>
-                            <FontAwesomeIcon
+                            <NavLink
                                 icon={faToolbox}
-                                style={{ margin: "5px" }}
+                                text="Skills"
+                                to="skills"
                             />
-                            Skills
-                        </Link>
-                        <Link to="projects" smooth duration={500}>
-                            <FontAwesomeIcon
+                            <NavLink
                                 icon={faRocket}
-                                style={{ margin: "5px" }}
+                                text="Projects"
+                                to="projects"
                             />
-                            Projects
-                        </Link>
-                        <Link to="experience" smooth duration={500}>
-                            <FontAwesomeIcon
+                            <NavLink
                                 icon={faCertificate}
-                                style={{ margin: "5px" }}
+                                text="Experience"
+                                to="experience"
                             />
-                            Experience
-                        </Link>
-                        <Link to="events" smooth duration={500}>
-                            <FontAwesomeIcon
+                            <NavLink
                                 icon={faCalendarDays}
-                                style={{ margin: "5px" }}
+                                text="Events"
+                                to="events"
                             />
-                            Events
-                        </Link>
+                        </nav>
                     </nav>
                 )}
 
@@ -94,7 +86,7 @@ function HeaderComponent() {
                             >
                                 <FontAwesomeIcon
                                     icon={faPuzzlePiece}
-                                    style={{ margin: "5px" }}
+                                    style={{ margin: "10px" }}
                                 />
                                 About
                             </Link>
@@ -106,7 +98,7 @@ function HeaderComponent() {
                             >
                                 <FontAwesomeIcon
                                     icon={faToolbox}
-                                    style={{ margin: "5px" }}
+                                    style={{ margin: "10px" }}
                                 />
                                 Skills
                             </Link>
@@ -118,7 +110,7 @@ function HeaderComponent() {
                             >
                                 <FontAwesomeIcon
                                     icon={faRocket}
-                                    style={{ margin: "5px" }}
+                                    style={{ margin: "10px" }}
                                 />
                                 Projects
                             </Link>
@@ -130,7 +122,7 @@ function HeaderComponent() {
                             >
                                 <FontAwesomeIcon
                                     icon={faCertificate}
-                                    style={{ margin: "5px" }}
+                                    style={{ margin: "10px" }}
                                 />
                                 Experience
                             </Link>
@@ -142,7 +134,7 @@ function HeaderComponent() {
                             >
                                 <FontAwesomeIcon
                                     icon={faCalendarDays}
-                                    style={{ margin: "5px" }}
+                                    style={{ margin: "10px" }}
                                 />
                                 Events
                             </Link>

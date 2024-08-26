@@ -58,7 +58,6 @@ nav a:hover {
 @media (max-width: 786px) {
     header {
         width: 100vw;
-        border: 1px solid black;
     }
     .header-container {
         justify-content: flex-start;
