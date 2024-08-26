@@ -20,7 +20,7 @@
     color: var(--tan);
     padding: 5px;
     flex-direction: column;
-    width: 75px;
+    width: 100px;
 }
 
 .work-experience-item-end-year {
@@ -35,7 +35,7 @@
     color: var(--tan);
     padding: 5px;
     flex-direction: column;
-    width: 75px;
+    width: 100px;
 }
 
 .work-experience-item-details {

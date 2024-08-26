@@ -18,16 +18,16 @@ function WorkExperienceSection() {
             details: "IDo Systems",
         },
         {
-            syear: "January 2023",
-            eyear: "Present",
-            title: "Junior Programmer",
-            details: "CTDI",
+            syear: "August 2019",
+            eyear: "December 2022",
+            title: "Customer Service Manager",
+            details: "Guitar Center",
         },
         {
-            syear: "January 2023",
-            eyear: "Present",
-            title: "Junior Programmer",
-            details: "CTDI",
+            syear: "September 2017",
+            eyear: "November 2020",
+            title: "Software Developer/Consultant",
+            details: "BlackBox Software",
         },
     ];
 
