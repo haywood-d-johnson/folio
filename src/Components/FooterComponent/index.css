@@ -1,7 +1,49 @@
-.contact-footer {
-    border: 1px solid var(--jelly-bean);
-    padding: 5px;
-    width: 50%;
+.footer {
+    width: 100%;
     display: flex;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "footer-job-opp footer-connect footer-gig-work" "footer-social-links footer-social-links footer-social-links";
+    width: 75%;
+    height: 400px;
+    font-size: large;
+}
+
+.footer-social-links {
+    grid-area: footer-social-links;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-job-opp {
+    grid-area: footer-job-opp;
+    padding: 5px;
+}
+
+.footer-connect {
+    grid-area: footer-connect;
+    padding: 5px;
+}
+
+.footer-gig-work {
+    grid-area: footer-gig-work;
+    padding: 5px;
+}
+
+.copyright {
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+    font-size: small;
 }
