@@ -4,9 +4,7 @@
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas:
-        "work-experience-item-start-year work-experience-item-end-year work-experience-item-title"
-        "work-experience-item-start-year work-experience-item-end-year work-experience-item-details";
+    grid-template-areas: "work-experience-item-start-year work-experience-item-end-year work-experience-item-title" "work-experience-item-start-year work-experience-item-end-year work-experience-item-details";
     background-color: white;
 }
 
@@ -21,6 +19,8 @@
     font-size: large;
     color: var(--tan);
     padding: 5px;
+    flex-direction: column;
+    width: 75px;
 }
 
 .work-experience-item-end-year {
@@ -34,6 +34,8 @@
     font-size: large;
     color: var(--tan);
     padding: 5px;
+    flex-direction: column;
+    width: 75px;
 }
 
 .work-experience-item-details {
@@ -41,11 +43,21 @@
     border: 2px solid var(--jelly-bean);
     margin: 0;
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .work-experience-item-title {
     grid-area: work-experience-item-title;
     border: 2px solid var(--jelly-bean);
     margin: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-end-icon {
     padding: 5px;
 }
