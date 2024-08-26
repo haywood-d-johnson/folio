@@ -56,35 +56,37 @@ function SkillsContainer() {
     const ITToolsList = ["ServiceNow"];
 
     return (
-        <div className="skills-container horizontal">
-            <SkillsColumn
-                icon={faGears}
-                title="Back-End Development"
-                skills={BEDevSkills}
-                description={BEDevDescription}
-                toolsList={BEDevToolsList}
-            />
-            <SkillsColumn
-                icon={faWandMagicSparkles}
-                title="Front-End Development"
-                skills={FEDevSkills}
-                description={FEDevDescription}
-                toolsList={FEDevToolsList}
-            />
-            <SkillsColumn
-                icon={faRobot}
-                title="Electronics & IoT"
-                skills={IoTDevSkills}
-                description={IoTDevDescription}
-                toolsList={IoTDevToolsList}
-            />
-            <SkillsColumn
-                icon={faShield}
-                title="IT Support"
-                skills={ITSkills}
-                description={ITDescription}
-                toolsList={ITToolsList}
-            />
+        <div className="skills-grid-container">
+            <div className="skills-container horizontal">
+                <SkillsColumn
+                    icon={faGears}
+                    title="Back-End Development"
+                    skills={BEDevSkills}
+                    description={BEDevDescription}
+                    toolsList={BEDevToolsList}
+                />
+                <SkillsColumn
+                    icon={faWandMagicSparkles}
+                    title="Front-End Development"
+                    skills={FEDevSkills}
+                    description={FEDevDescription}
+                    toolsList={FEDevToolsList}
+                />
+                <SkillsColumn
+                    icon={faRobot}
+                    title="Electronics & IoT"
+                    skills={IoTDevSkills}
+                    description={IoTDevDescription}
+                    toolsList={IoTDevToolsList}
+                />
+                <SkillsColumn
+                    icon={faShield}
+                    title="IT Support"
+                    skills={ITSkills}
+                    description={ITDescription}
+                    toolsList={ITToolsList}
+                />
+            </div>
         </div>
     );
 }

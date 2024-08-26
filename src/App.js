@@ -46,9 +46,9 @@ function App() {
                 <div className="certification-container">
                     <h3 className="certification-header">CERTIFICATIONS</h3>
                     <CertificationSection />
-                </div>{" "}
+                </div>
                 <div className="certification-container">
-                    <h3 className="certification-header">Experience</h3>
+                    <h3 className="certification-header">WORK EXPERIENCE</h3>
                     <WorkExperienceSection />
                 </div>
             </section>
