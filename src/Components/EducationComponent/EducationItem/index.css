@@ -34,3 +34,10 @@
     color: var(--tan);
     padding: 5px;
 }
+
+@media (max-width: 786px) {
+    .experience-item {
+        width: 95vw;
+        margin: 5px 0;
+    }
+}

@@ -25,13 +25,6 @@ function FooterSection() {
     return (
         <footer className="footer">
             <div class="footer-container">
-                <div class="footer-social-links">
-                    <SocialMediaLinks />
-                    <p className="copyright">
-                        <div className="copyright-name">Haywood D. Johnson</div>
-                        <div className="copyright-arr">All Rights Reserved</div>
-                    </p>
-                </div>
                 <div class="footer-job-opp">
                     <h3 className="connect-title">{footerData[0].title}</h3>
                     <p className="connect-description">
@@ -48,6 +41,13 @@ function FooterSection() {
                     <h3 className="connect-title">{footerData[2].title}</h3>
                     <p className="connect-description">
                         {footerData[2].description}
+                    </p>
+                </div>
+                <div class="footer-social-links">
+                    <SocialMediaLinks />
+                    <p className="copyright">
+                        <div className="copyright-name">Haywood D. Johnson</div>
+                        <div className="copyright-arr">All Rights Reserved</div>
                     </p>
                 </div>
             </div>

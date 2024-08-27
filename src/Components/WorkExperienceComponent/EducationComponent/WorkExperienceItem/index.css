@@ -61,3 +61,41 @@
 .start-end-icon {
     padding: 5px;
 }
+
+@media (max-width: 786px) {
+    .work-experience-item {
+        width: 80vw;
+        border: 1px solid;
+    }
+
+    .work-experience-item {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+        grid-template-rows: 2fr 0.5fr 0.5fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "work-experience-item-start-year work-experience-item-end-year"
+            "work-experience-item-title work-experience-item-title"
+            "work-experience-item-details work-experience-item-details";
+    }
+
+    .work-experience-item-details {
+        grid-area: work-experience-item-details;
+    }
+
+    .work-experience-item-title {
+        grid-area: work-experience-item-title;
+    }
+
+    .work-experience-item-start-year {
+        grid-area: work-experience-item-start-year;
+        width: -webkit-fill-available;
+    }
+
+    .work-experience-item-end-year {
+        grid-area: work-experience-item-end-year;
+        width: -webkit-fill-available;
+    }
+}

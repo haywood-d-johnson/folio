@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
 }
 
 .footer-container {
@@ -46,4 +45,21 @@
     width: 25%;
     justify-content: space-evenly;
     font-size: small;
+}
+
+@media (max-width: 786px) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .copyright {
+        width: 100vw;
+    }
 }

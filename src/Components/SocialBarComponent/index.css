@@ -1,11 +1,14 @@
 .social-media-links {
     display: flex;
     gap: 10px;
-    /* Adjust the gap as needed */
     align-items: center;
-    align-self: center;
-    justify-content: space-between;
     margin: 1rem;
+    flex-direction: column;
+}
+.sm-icon-array {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .social-media-links a {
@@ -33,4 +36,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 786px) {
+    .social-media-links {
+        flex-direction: column;
+    }
+    .sm-icon-array {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }

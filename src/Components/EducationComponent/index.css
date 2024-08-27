@@ -11,3 +11,11 @@
     margin: 2rem;
     align-self: center;
 }
+
+@media (max-width: 786px) {
+    .experience-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+}
