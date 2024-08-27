@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
 import "./index.css";
 import SocialMediaLinks from "../SocialBarComponent";
@@ -46,7 +48,13 @@ function FooterSection() {
                 <div class="footer-social-links">
                     <SocialMediaLinks />
                     <p className="copyright">
-                        <div className="copyright-name">Haywood D. Johnson</div>
+                        <div className="copyright-name">
+                            <FontAwesomeIcon
+                                icon={faCopyright}
+                                style={{ marginRight: "10px" }}
+                            />
+                            Haywood D. Johnson
+                        </div>
                         <div className="copyright-arr">All Rights Reserved</div>
                     </p>
                 </div>
