@@ -20,6 +20,8 @@ function SkillsContainer() {
         "Node.Js",
         ".NET/ASP.NET",
         "SQL/NoSQL DBMS",
+        "Google Analytics",
+        "Firebase Analytics",
     ];
 
     //Front-End DEV
