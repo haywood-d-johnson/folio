@@ -40,6 +40,10 @@
     padding: 5px;
 }
 
+.connect-description {
+    height: inherit;
+}
+
 .copyright {
     display: flex;
     width: 25%;
