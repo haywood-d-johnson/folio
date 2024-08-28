@@ -108,3 +108,7 @@ Simple, responsive portfolio page.
 ## Todo
 
 -   [ ] Dark Mode Switch
+
+
+
+![Vercel](https://vercelbadge.vercel.app/api/haywood-d-johnson/folio?style=for-the-badge)
