@@ -24,3 +24,10 @@
     width: 100%;
     justify-content: center;
 }
+
+@media (max-width: 786px) {
+    .download-cv-button {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

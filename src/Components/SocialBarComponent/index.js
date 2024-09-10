@@ -25,15 +25,7 @@ function SocialMediaLinks() {
                         <FontAwesomeIcon icon={faFacebookF} size="lg" />
                     </a>
                     <a
-                        href="https://www.twitter.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="sm-bubble"
-                    >
-                        <FontAwesomeIcon icon={faXTwitter} size="lg" />
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/"
+                        href="https://www.linkedin.com/in/haywood-d-johnson/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="sm-bubble"
@@ -41,7 +33,7 @@ function SocialMediaLinks() {
                         <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
                     </a>
                     <a
-                        href="https://www.linkedin.com/"
+                        href="https://www.youtube.com/@BlackBoxSoft"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="sm-bubble"
@@ -49,7 +41,7 @@ function SocialMediaLinks() {
                         <FontAwesomeIcon icon={faYoutube} size="lg" />
                     </a>
                     <a
-                        href="https://www.linkedin.com/"
+                        href="https://github.com/haywood-d-johnson"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="sm-bubble"
