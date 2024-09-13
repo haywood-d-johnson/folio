@@ -1,3 +1,5 @@
+import ReactGA from "react-ga4";
+
 import HeaderComponent from "./Components/HeaderComponent";
 import RoundedImage from "./Components/ImageComponent";
 import Introduction from "./Components/IntroComponent";
@@ -14,6 +16,10 @@ import EventsSection from "./Components/EventsComponent";
 import FooterSection from "./Components/FooterComponent";
 
 import "./App.css";
+
+const measurement_id = process.env.REACT_APP_MEASUREMENT_ID;
+
+ReactGA.initialize(measurement_id);
 
 function App() {
     return (
