@@ -8,7 +8,7 @@ function DownloadCVButton() {
     return (
         <div className="button-container">
             <a
-                href="https://drive.google.com/file/d/1d9N-DHvvNt1DMq3Ul0SzoUk-WuFdGE0J/view?usp=sharing"
+                href="https://drive.google.com/file/d/1k2sNOgqcP0bckHZH_PgKbMyWr1jmD-vM/view?usp=sharing"
                 download
                 className="download-cv-button"
             >
