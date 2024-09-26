@@ -8,7 +8,7 @@ function EducationSection() {
         {
             year: "August 2024",
             title: "Bachelor of Science in Computer Science",
-            details: "Colorado Technical Institute",
+            details: "Colorado Technical University",
         },
         {
             year: "April 2022",
