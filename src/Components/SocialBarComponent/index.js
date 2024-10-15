@@ -14,7 +14,7 @@ function SocialMediaLinks() {
     return (
         <div className="sml-cotainer">
             <div className="social-media-links">
-                <div>You can also find me on my socials</div>
+                <div>You can also find me on my socials...</div>
                 <div className="sm-icon-array">
                     <a
                         href="https://www.facebook.com/bboxsoft/"
@@ -47,6 +47,22 @@ function SocialMediaLinks() {
                         className="sm-bubble"
                     >
                         <FontAwesomeIcon icon={faGithub} size="lg" />
+                    </a>
+                </div>
+                <div className="bbs_container">
+                    ...or, check me out here if you need anything built.
+                    <a
+                        href="https://www.blackboxsoft.online"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="sm-bubble"
+                        style={{ marginLeft: 10 }}
+                    >
+                        <img
+                            className="bbs-img"
+                            src="/BlackBoxSoftLogo.png"
+                            alt="bbs"
+                        />
                     </a>
                 </div>
             </div>

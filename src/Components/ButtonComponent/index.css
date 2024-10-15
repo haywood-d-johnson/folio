@@ -10,7 +10,7 @@
     width: 150px;
     align-self: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     transition: color 0.3s, background-color 0.3s;
 }
 

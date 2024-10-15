@@ -2,9 +2,10 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    margin: 1rem;
+    margin: 2rem;
     flex-direction: column;
 }
+
 .sm-icon-array {
     display: flex;
     justify-content: space-evenly;
@@ -29,6 +30,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.bbs-img {
+    width: 20px;
+    height: 20px;
+}
+
+.bbs_container {
+    display: flex;
+    align-items: center;
 }
 
 .sm-bubble {
