@@ -14,7 +14,7 @@ function SocialMediaLinks() {
     return (
         <div className="sml-cotainer">
             <div className="social-media-links">
-                <div>You can also find me on my socials...</div>
+                <div>You can also find me on my socials</div>
                 <div className="sm-icon-array">
                     <a
                         href="https://www.facebook.com/bboxsoft/"
@@ -50,7 +50,7 @@ function SocialMediaLinks() {
                     </a>
                 </div>
                 <div className="bbs_container">
-                    ...or, check me out here if you need anything built.
+                    Or here if you need anything built.
                     <a
                         href="https://www.blackboxsoft.online"
                         target="_blank"
