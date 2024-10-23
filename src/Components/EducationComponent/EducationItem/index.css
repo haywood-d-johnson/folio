@@ -8,6 +8,12 @@
     background-color: white;
 }
 
+.experience-item-with-image {
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "experience-item-year experience-item-image experience-item-content";
+}
+
 .experience-item-details {
     grid-area: experience-item-details;
     border: 2px solid var(--jelly-bean);
