@@ -1,4 +1,4 @@
-.experience-item {
+.experience-item-grid {
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
     grid-template-rows: 1fr 1fr;
@@ -8,10 +8,10 @@
     background-color: white;
 }
 
-.experience-item-with-image {
-  grid-template-columns: 0.5fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "experience-item-year experience-item-image experience-item-content";
+.experience-item-diploma {
+    grid-area: experience-item-diploma;
+    margin: 0;
+    padding: 5px;
 }
 
 .experience-item-details {
@@ -39,6 +39,12 @@
     font-size: x-large;
     color: var(--tan);
     padding: 5px;
+}
+
+.experience-item-image {
+    border: 2px solid var(--jelly-bean);
+    padding: 0.5rem;
+    background-color: white;
 }
 
 @media (max-width: 786px) {
