@@ -1,5 +1,12 @@
 import ReactGA from "react-ga4";
 
+import React, { useState, useEffect} from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faSun,
+    faMoon
+} from "@fortawesome/free-solid-svg-icons";
+
 import HeaderComponent from "./Components/HeaderComponent";
 import RoundedImage from "./Components/ImageComponent";
 import Introduction from "./Components/IntroComponent";
@@ -22,8 +29,23 @@ const measurement_id = process.env.REACT_APP_MEASUREMENT_ID;
 ReactGA.initialize(measurement_id);
 
 function App() {
+    const [isNightMode, setIsNightMode] = useState(false);
+
+    useEffect(() => {
+        document.body.className = isNightMode ? "night-mode" : "light-mode";
+    }, [isNightMode]);
+
+    const toggleNightMode = () => {
+        setIsNightMode(!isNightMode);
+    };
+
     return (
         <div className="App">
+            <div className="night_mode_btn_header-container">
+                <button className="night_mode_btn" onClick={toggleNightMode}>
+                { isNightMode ? <FontAwesomeIcon icon={faSun} size="lg" /> : <FontAwesomeIcon icon={faMoon} size="lg" /> }
+                </button>
+            </div>
             <HeaderComponent />
             <section id="about">
                 <h1 className="about-header">Haywood D. Johnson</h1>

@@ -23,6 +23,12 @@ body {
     color: var(--thunder);
 }
 
+.night_mode_btn {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
 .rounded-img {
     align-self: center;
     border-radius: 50%;
@@ -44,7 +50,7 @@ body {
     font-size: xx-large;
 }
 
-@media (max-width: 786px) {
+@media (min-width: 786px) {
     #about {
         width: 100vw;
         display: flex;
@@ -52,5 +58,17 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    .night_mode_btn {
+        right: 500px;
+        top: 25px;
+    }
+}
+
+@media (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+    .night_mode_btn {
+        right: 30px;
+        top: 100px;
     }
 }

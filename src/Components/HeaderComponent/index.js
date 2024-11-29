@@ -71,6 +71,7 @@ function HeaderComponent() {
                                 text="Events"
                                 to="events"
                             />
+
                         </nav>
                     </nav>
                 )}
