@@ -5,6 +5,7 @@
     --jelly-bean: #227c96;
     --thunder: #353135;
     --westar: #e8e6e3;
+    --cloud: #C8C3BC;
 }
 
 .App {
@@ -21,6 +22,16 @@ body {
     background-color: var(--gallery);
     font-weight: 500;
     color: var(--thunder);
+}
+
+.underconstruction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.night {
+    background-color: var(--thunder);
 }
 
 .night_mode_btn {
@@ -61,14 +72,21 @@ body {
     }
 
     .night_mode_btn {
-        right: 500px;
-        top: 25px;
+        right: 30px;
+        top: 30px;
     }
 }
 
-@media (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+@media (orientation: landscape), (min-width: 768px) {
     .night_mode_btn {
-        right: 30px;
+        right: 75px;
+        top: 75px;
+    }
+}
+
+@media (min-width: 1025px) {
+        .night_mode_btn {
+        right: 500px;
         top: 100px;
     }
 }

@@ -24,6 +24,16 @@ header nav {
     margin: 20px;
 }
 
+.nav-links .nav-night a {
+    color: var(--cloud);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-links .nav-night a:hover {
+    color: var(--thunder);
+    background-color: var(--ironstone);
+}
+
 nav {
     display: flex;
     gap: 20px;

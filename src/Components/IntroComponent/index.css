@@ -1,9 +1,12 @@
 .intro-container {
     text-align: center;
-    background-color: (var(--));
 }
 
 .intro {
     margin-top: 0.5rem;
     font-weight: 500;
+}
+
+.night {
+    color: var(--gallery);
 }

@@ -4,7 +4,8 @@ import React, { useState, useEffect} from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faSun,
-    faMoon
+    faMoon,
+    faHelmetSafety
 } from "@fortawesome/free-solid-svg-icons";
 
 import HeaderComponent from "./Components/HeaderComponent";
@@ -40,21 +41,26 @@ function App() {
     };
 
     return (
-        <div className="App">
+        <div className={`App ${isNightMode ? "night" : ""}`}>
             <div className="night_mode_btn_header-container">
                 <button className="night_mode_btn" onClick={toggleNightMode}>
                 { isNightMode ? <FontAwesomeIcon icon={faSun} size="lg" /> : <FontAwesomeIcon icon={faMoon} size="lg" /> }
                 </button>
             </div>
-            <HeaderComponent />
+            <HeaderComponent nightMode={ isNightMode } />
             <section id="about">
                 <h1 className="about-header">Haywood D. Johnson</h1>
+                <div className="underconstruction">
+                    <FontAwesomeIcon icon={faHelmetSafety} className="construct-icon" />
+                    <h4>Pardon our dust. Doing some maintenance!</h4>
+                    <FontAwesomeIcon icon={faHelmetSafety} className="construct-icon" />
+                </div>
                 <RoundedImage
                     src="/avatar.png"
                     alt="me or whatever"
                     className="rounded-img"
                 />
-                <Introduction />
+                <Introduction nightMode={ isNightMode } />
                 <SocialMediaLinks />
             </section>
             <section id="skills">

@@ -13,7 +13,7 @@ import NavLink from "./NavLinkComponent";
 
 import "./index.css";
 
-function HeaderComponent() {
+function HeaderComponent({ nightMode }) {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 786);
 
@@ -45,7 +45,7 @@ function HeaderComponent() {
 
                 {!isMobile && (
                     <nav className="nav-links">
-                        <nav className="nav-links">
+                        <nav className={`nav-links ${ nightMode ? "nav-night" : "" }`}>
                             <NavLink
                                 icon={faPuzzlePiece}
                                 text="About"
