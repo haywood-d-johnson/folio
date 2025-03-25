@@ -16,16 +16,32 @@
 
 .project-details {
     text-align: center;
-    margin-top: 10px;
 }
 
 .project-details h3 {
     font-size: 18px;
-    margin-bottom: 5px;
+    margin: 0.5rem;
     color: var(--jelly-bean);
 }
 
 .project-details p {
     font-size: 14px;
     color: #666;
+}
+
+.project-github_text {
+    text-decoration: none;
+    color: var(--tan);
+    margin: 0.5rem;
+}
+
+.project-title_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.project-grid-item svg {
+    color: var(--thunder);
 }

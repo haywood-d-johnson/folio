@@ -2,32 +2,37 @@ import React from "react";
 
 import "./index.css";
 
-import {
-    faScrewdriverWrench
-} from "@fortawesome/free-solid-svg-icons";
+import { faScrewdriverWrench, faLeaf } from "@fortawesome/free-solid-svg-icons";
 
-import { ProjectImage, ProjectDetails } from "./ProjectComponent";
+import { ProjectDetails } from "./ProjectComponent";
 import ComingSoonComponent from "../ComingSoonComponent";
 
 function ProjectsSection() {
     const projects = [
-        // template
-        // {
-        //     title: "Project 1",
-        //     githubLink: "",
-        //     description:
-        //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        //     imageUrl: "path/to/project1.jpg",
-        //     techStack: ["test"],
-        // },
         {
-            title: "Job Hunt App",
+            title: "HiredUp",
             titleIcon: faScrewdriverWrench,
             githubLink: "http://github.com/haywood-d-johnson/job-hunt-app",
-            description: "A powerful tool to streamline your job search by automating job scraping, tracking applications, and tailoring resumes/cover letters using AI.",
-            imageUrl: "",
-            techStack: ["python", "flask", "react", "react native"]
-        }
+            description:
+                "A powerful tool to streamline your job search by automating job scraping, tracking applications, and tailoring resumes/cover letters using AI.",
+            techStack: ["python", "flask", "react", "react native"],
+        },
+        {
+            title: "Plant Communicator",
+            titleIcon: faLeaf,
+            githubLink:
+                "https://github.com/haywood-d-johnson/plant_communicator",
+            description:
+                "A full-stack IoT solution for monitoring soil moisture and fertility (NPK levels) using Arduino, Node.js/Express, Supabase, and a React Native mobile app.",
+            techStack: [
+                "C++",
+                "javascript",
+                "react",
+                "typescript",
+                "nodejs",
+                "expressjs",
+            ],
+        },
     ];
 
     return (
@@ -36,10 +41,6 @@ function ProjectsSection() {
                 <div className="project-grid">
                     {projects.map((project, index) => (
                         <div className="project-grid-item" key={index}>
-                            <ProjectImage
-                                imageUrl={project.imageUrl}
-                                alt={project.title}
-                            />
                             <ProjectDetails
                                 title={project.title}
                                 titleIcon={project.titleIcon}
