@@ -45,3 +45,12 @@
 .project-grid-item svg {
     color: var(--thunder);
 }
+
+@media (max-width: 786px) {
+    .project-grid {
+        display: block;
+    }
+    .project-grid-item {
+        margin: 20px;
+    }
+}
