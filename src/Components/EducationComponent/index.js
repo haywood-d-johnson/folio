@@ -3,7 +3,7 @@ import { ExperienceItem } from "./EducationItem";
 
 import "./index.css";
 
-function EducationSection() {
+function EducationSection({ nightMode }) {
     const education = [
         {
             year: "April 2022",

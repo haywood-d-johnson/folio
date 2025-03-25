@@ -43,7 +43,7 @@ function App() {
     return (
         <div className={`App ${isNightMode ? "night" : ""}`}>
             <div className="night_mode_btn_header-container">
-                <button className="night_mode_btn" onClick={toggleNightMode}>
+                <button className={`night_mode_btn ${isNightMode ? "sun" : "moon"}`} onClick={toggleNightMode}>
                 { isNightMode ? <FontAwesomeIcon icon={faSun} size="lg" /> : <FontAwesomeIcon icon={faMoon} size="lg" /> }
                 </button>
             </div>
@@ -76,7 +76,7 @@ function App() {
                 <h2 className="projects-header">EXPERIENCE</h2>
                 <div className="education-container">
                     <h3 className="education-header">EDUCATION</h3>
-                    <EducationSection />
+                    <EducationSection nightMode={ isNightMode } />
                 </div>
                 <div className="certification-container">
                     <h3 className="certification-header">CERTIFICATIONS</h3>

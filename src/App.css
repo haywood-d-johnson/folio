@@ -38,6 +38,8 @@ body {
     position: absolute;
     right: 30px;
     top: 30px;
+    border: none;
+    background: none;
 }
 
 .rounded-img {
@@ -59,6 +61,14 @@ body {
 
 .about-header {
     font-size: xx-large;
+}
+
+.sun {
+    color: var(--gallery);
+}
+
+.moon {
+    color: var(--thunder);
 }
 
 @media (min-width: 786px) {

@@ -4,6 +4,12 @@ import { convertToCommaSeparatedList } from "../../SkillsComponent/SkillsColumnC
 
 import "./index.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faGithub
+} from "@fortawesome/free-brands-svg-icons";
+
+
 export function ProjectImage({ imageUrl, alt }) {
     return (
         <div className="project-image-container">
@@ -12,12 +18,20 @@ export function ProjectImage({ imageUrl, alt }) {
     );
 }
 
-export function ProjectDetails({ title, description, techStack }) {
+export function ProjectDetails({ title, titleIcon, githubLink, description, techStack }) {
     const stackList = convertToCommaSeparatedList(techStack);
 
     return (
         <div className="project-details">
-            <h3>{title}</h3>
+            <div className="project-title_container">
+                <FontAwesomeIcon icon={ titleIcon } />
+                <h3>{ title }</h3>
+                <FontAwesomeIcon icon={ titleIcon } />
+            </div>
+            <div className="project-github_container">
+                <FontAwesomeIcon icon={ faGithub } />
+                <a href={githubLink}>GitHub Repo</a>
+            </div>
             <p>{description}</p>
             <h3>Technologies Stack:</h3>
             <p>{stackList}</p>
