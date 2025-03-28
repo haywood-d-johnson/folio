@@ -2,91 +2,119 @@ import React from "react";
 import SkillsColumn from "./SkillsColumnComponent";
 
 import {
-    faGears,
-    faWandMagicSparkles,
     faRobot,
-    faShield,
+    faCloud,
+    faCode,
+    faCubes,
+    faDatabase,
+    faCheck,
+    faChartLine,
+    faBrain,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./index.css";
 
 function SkillsContainer() {
-    //Back-End DEV
-    const BEDevDescription =
-        "Skilled backend engineer with a strong foundation in API design and development, coupled with a proven track record in utilizing version control for efficient collaboration.";
-    const BEDevSkills = ["PHP", "Python", "Java", "C/C++", "C#"];
-    const BEDevToolsList = [
+    const CloudPlatformSkills = ["Microsoft Azure", "AWS", "GCP"];
+    const ProgrammingLanguageSkills = [
+        "JavaScript",
+        "TypeScript",
+        "PHP",
+        "Python",
+        "Java",
+        "C/C++",
+        "C#",
+    ];
+    const FrameworksLibrariesSkills = [
+        "React",
+        "React Native",
+        "Node.js",
+        "Express.js",
+        "jQuery",
         "Django",
-        "Node.Js",
-        ".NET/ASP.NET",
-        "SQL/NoSQL DBMS",
+        "Laravel",
+        ".NET Core/.NET Framework",
+        "Vue.js",
+        "WordPress",
+        "Arduino",
+    ];
+    const DatabaseManagementSkills = [
+        "Oracle RDBMS",
+        "SQL Server",
+        "MySQL",
+        "MSSQL",
+        "MongoDB",
+    ];
+    const TestingAutomationSkills = [
+        "Selenium",
+        "JMeter",
+        "Postman",
+        "Jenkins",
+        "VMware",
+        "Mocha",
+        "Chai",
+        "Jest",
+    ];
+    const AnalyticsToolsSkills = [
         "Google Analytics",
         "Firebase Analytics",
+        "Docker",
+        "Git",
+        "CI/CD",
+        "Linux Development Environments",
+        "API & Data Integration Strategies",
     ];
-
-    //Front-End DEV
-    const FEDevDescription =
-        "Proficient front-end engineer with a deep understanding of web standards and best practices, capable of delivering high-quality and performant user experiences.";
-    const FEDevSkills = ["Javascript", "HTML", "CSS", "Pug"];
-    const FEDevToolsList = [
-        "ReactJS",
-        "React Native",
-        "AngularJS",
-        "J-Query",
-        "MochaJS/Jest",
-        "Playwright",
-        "Selenium",
-        "GitHub",
-    ];
-
-    // Electronics & IoT
-    const IoTDevDescription =
-        "Innovative electronics engineer specializing in designing and developing cutting-edge IoT devices with knowledge in hardware design, microcontroller programming, and wireless communication protocols.";
-    const IoTDevSkills = ["Arduino", "Python", "C/C++"];
-    const IoTDevToolsList = [
+    const EmbeddedSystemsSkills = [
+        "ARM microprocessors",
+        "Real-Time Operating Systems (RTOS)",
+        "ROS2",
         "Arduino",
         "Raspberry Pi",
-        "Circuit Design",
-        "Artificial Inteligence",
-        "Machine Learning",
     ];
-
-    // IT Support
-    const ITDescription =
-        "Customer-oriented IT Support specialist with a passion for helping others. Able to provide technical assistance and support for a wide range of IT systems, ensuring optimal performance and user satisfaction.";
-    const ITSkills = ["ITIL v3", "ITSM"];
-    const ITToolsList = ["ServiceNow"];
+    const MachineLearningSkills = ["TensorFlow", "OpenCV"];
 
     return (
         <div className="skills-grid-container">
             <div className="skills-container horizontal">
                 <SkillsColumn
-                    icon={faGears}
-                    title="Back-End Development"
-                    skills={BEDevSkills}
-                    description={BEDevDescription}
-                    toolsList={BEDevToolsList}
+                    icon={faCloud}
+                    title="Cloud Platforms"
+                    skills={CloudPlatformSkills}
                 />
                 <SkillsColumn
-                    icon={faWandMagicSparkles}
-                    title="Front-End Development"
-                    skills={FEDevSkills}
-                    description={FEDevDescription}
-                    toolsList={FEDevToolsList}
+                    icon={faCode}
+                    title="Programming Languages"
+                    skills={ProgrammingLanguageSkills}
+                />
+                <SkillsColumn
+                    icon={faCubes}
+                    title="Frameworks & Libraries"
+                    skills={FrameworksLibrariesSkills}
+                />
+                <SkillsColumn
+                    icon={faDatabase}
+                    title="Database Management"
+                    skills={DatabaseManagementSkills}
+                />
+                <SkillsColumn
+                    icon={faCheck}
+                    title="Testing & Automation"
+                    skills={TestingAutomationSkills}
+                />
+                <SkillsColumn
+                    icon={faChartLine}
+                    title="Analytics & Tools"
+                    skills={AnalyticsToolsSkills}
+                />
+                <SkillsColumn
+                    icon={faBrain}
+                    title="MachineLearning & Artificial Intelligence"
+                    skills={MachineLearningSkills}
                 />
                 <SkillsColumn
                     icon={faRobot}
-                    title="Electronics & IoT"
-                    skills={IoTDevSkills}
-                    description={IoTDevDescription}
-                    toolsList={IoTDevToolsList}
-                />
-                <SkillsColumn
-                    icon={faShield}
-                    title="IT Support"
-                    skills={ITSkills}
-                    description={ITDescription}
-                    toolsList={ITToolsList}
+                    title="Embedded Systems"
+                    skills={EmbeddedSystemsSkills}
                 />
             </div>
         </div>

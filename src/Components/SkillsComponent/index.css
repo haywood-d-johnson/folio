@@ -1,11 +1,11 @@
 .skills-container.horizontal {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
     gap: 20px;
-    grid-auto-flow: column;
     align-self: center;
     padding: 1rem;
-    width: 1500px;
+    width: 1000px;
 }
 
 .skills-grid-container {
@@ -14,6 +14,15 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+}
+
+.skills-column:nth-child(7) {
+    justify-self: center;
+}
+
+.skills-column:nth-child(8) {
+    grid-column: 3 / 3;
+    justify-self: center;
 }
 
 @media (max-width: 786px) {
