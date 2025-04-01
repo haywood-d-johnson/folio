@@ -3,7 +3,7 @@ import { WorkExperienceItem } from "./WorkExperienceItem";
 
 import "./index.css";
 
-function WorkExperienceSection() {
+function WorkExperienceSection({ nightMode }) {
     const education = [
         {
             syear: "January 2023",
@@ -33,7 +33,7 @@ function WorkExperienceSection() {
 
     return (
         <section className="work-experience-section">
-            <div className="work-experience-grid">
+            <div className={`work-experience-grid ${nightMode ? "sun" : "moon"}`} >
                 {education.map((edu, index) => (
                     <WorkExperienceItem key={index} {...edu} />
                 ))}

@@ -29,21 +29,12 @@ function FooterSection() {
             <div class="footer-container">
                 <div class="footer-job-opp">
                     <h3 className="connect-title">{footerData[0].title}</h3>
-                    <p className="connect-description">
-                        {footerData[0].description}
-                    </p>
                 </div>
                 <div class="footer-connect">
                     <h3 className="connect-title">{footerData[1].title}</h3>
-                    <p className="connect-description">
-                        {footerData[1].description}
-                    </p>
                 </div>
                 <div class="footer-gig-work">
                     <h3 className="connect-title">{footerData[2].title}</h3>
-                    <p className="connect-description">
-                        {footerData[2].description}
-                    </p>
                 </div>
                 <div class="footer-social-links">
                     <SocialMediaLinks />

@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faSun,
     faMoon,
-    faHelmetSafety
 } from "@fortawesome/free-solid-svg-icons";
 
 import HeaderComponent from "./Components/HeaderComponent";
@@ -50,11 +49,6 @@ function App() {
             <HeaderComponent nightMode={ isNightMode } />
             <section id="about">
                 <h1 className="about-header">Haywood D. Johnson</h1>
-                <div className="underconstruction">
-                    <FontAwesomeIcon icon={faHelmetSafety} className="construct-icon" />
-                    <h4>Pardon our dust. Doing some maintenance!</h4>
-                    <FontAwesomeIcon icon={faHelmetSafety} className="construct-icon" />
-                </div>
                 <RoundedImage
                     src="/avatar.png"
                     alt="me or whatever"
@@ -80,11 +74,11 @@ function App() {
                 </div>
                 <div className="certification-container">
                     <h3 className="certification-header">CERTIFICATIONS</h3>
-                    <CertificationSection />
+                    <CertificationSection nightMode={ isNightMode } />
                 </div>
                 <div className="certification-container">
                     <h3 className="certification-header">WORK EXPERIENCE</h3>
-                    <WorkExperienceSection />
+                    <WorkExperienceSection nightMode={ isNightMode } />
                 </div>
             </section>
             <section id="events">

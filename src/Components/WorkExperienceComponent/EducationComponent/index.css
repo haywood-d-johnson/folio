@@ -13,6 +13,14 @@
     align-self: center;
 }
 
+    .sun .experience-item .experience-item-grid .experience-item-title,.experience-item-details {
+        color: var(--thunder);
+    }
+
+    .sun .work-experience-item .work-experience-item-title, .work-experience-item-details{
+        color: var(--thunder);
+    }
+
 @media (max-width: 786px) {
     .work-experience-grid {
         display: flex;
@@ -22,4 +30,5 @@
         width: 90vw;
         margin: 1rem;
     }
+
 }
