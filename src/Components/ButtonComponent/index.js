@@ -32,20 +32,13 @@ function DownloadCVButton() {
 
     return (
         <div className="button-container">
-            <button
-                onClick={handleDownload}
+            <a
+                href="https://drive.google.com/uc?export=download&id=1MrLzBY5MWF6roVtU5ZkwIK1OAzxHj8EG"
                 className="download-cv-button"
-                disabled={isLoading}
-                aria-label="Download CV"
-                role="button"
             >
-                <FontAwesomeIcon
-                    icon={isLoading ? faSpinner : faFile}
-                    style={{ padding: "5px" }}
-                    className={isLoading ? "fa-spin" : ""}
-                />
-                {isLoading ? 'Downloading...' : 'Download CV'}
-            </button>
+                <FontAwesomeIcon icon={faFile} style={{ padding: "5px" }} />
+                Download CV
+            </a>
         </div>
     );
 }
