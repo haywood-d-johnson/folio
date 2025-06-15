@@ -1,28 +1,52 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
 .download-cv-button {
-    background-color: #f0f0f0;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: var(--jelly-bean);
+    color: white;
     border: none;
-    padding: 20px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: var(--thunder);
+    border-radius: 4px;
+    font-size: 16px;
     font-weight: 500;
     text-decoration: none;
-    width: 150px;
-    align-self: center;
-    display: flex;
-    justify-content: space-evenly;
-    transition: color 0.3s, background-color 0.3s;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .download-cv-button:hover {
-    background-color: var(--tan);
-    color: white;
+    background-color: var(--jelly-bean);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.button-container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.download-cv-button:active {
+    transform: translateY(0);
+}
+
+.download-cv-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.fa-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (max-width: 786px) {
