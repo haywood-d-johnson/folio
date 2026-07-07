@@ -1,36 +1,46 @@
-.experience-item-grid {
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "experience-item-year experience-item-title" "experience-item-year experience-item-details";
-    background-color: white;
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease,
+        border-color 0.2s ease;
 }
 
-.experience-item-diploma {
-    grid-area: experience-item-diploma;
-    margin: 0;
-    padding: 5px;
+.experience-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--card-hover-border);
 }
 
-.experience-item-details {
-    grid-area: experience-item-details;
-    border: 2px solid var(--jelly-bean);
-    margin: 0;
-    padding: 5px;
+.experience-item-image {
+    flex: 0 0 auto;
+    padding: 0.75rem;
+    background-color: var(--bg-elev);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.experience-item-title {
-    grid-area: experience-item-title;
-    border: 2px solid var(--jelly-bean);
-    margin: 0;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
+.experience-item-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.experience-item-grid {
+    display: grid;
+    grid-template-columns: 0.6fr 1.6fr;
+    grid-template-rows: auto auto;
+    gap: 0.2rem 0.75rem;
+    grid-template-areas:
+        "experience-item-year experience-item-title"
+        "experience-item-year experience-item-details";
+    flex: 1 1 auto;
+    padding: 1.1rem 1rem;
     align-items: center;
 }
 
@@ -39,21 +49,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--jelly-bean);
     margin: 0;
-    font-weight: bold;
-    font-size: x-large;
-    color: var(--tan);
-    padding: 5px;
+    padding: 0.4rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--accent);
+    border-right: 1px solid var(--card-border);
 }
 
-.experience-item-image {
-    border: 2px solid var(--jelly-bean);
-    padding: 0.5rem;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.experience-item-title {
+    grid-area: experience-item-title;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.experience-item-details {
+    grid-area: experience-item-details;
+    margin: 0;
+    padding: 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-align: left;
 }
 
 @media (max-width: 786px) {

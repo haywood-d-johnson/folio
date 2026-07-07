@@ -1,7 +1,5 @@
 import React from "react";
 
-import { convertToCommaSeparatedList } from "../../SkillsComponent/SkillsColumnComponent";
-
 import "./index.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,8 +12,6 @@ export function ProjectDetails({
     description,
     techStack,
 }) {
-    const stackList = convertToCommaSeparatedList(techStack);
-
     return (
         <div className="project-details">
             <div className="project-title_container">
@@ -25,13 +21,24 @@ export function ProjectDetails({
             </div>
             <div className="project-github_container">
                 <FontAwesomeIcon icon={faGithub} />
-                <a className="project-github_text" href={githubLink}>
+                <a
+                    className="project-github_text"
+                    href={githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     GitHub Repo
                 </a>
             </div>
             <p>{description}</p>
-            <h3>Tech Stack:</h3>
-            <p>{stackList}</p>
+            <h3>Tech Stack</h3>
+            <div className="chip-row project-stack">
+                {techStack.map((tech, index) => (
+                    <span className="chip" key={index}>
+                        {tech}
+                    </span>
+                ))}
+            </div>
         </div>
     );
 }

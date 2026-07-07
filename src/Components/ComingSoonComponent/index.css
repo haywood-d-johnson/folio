@@ -1,16 +1,17 @@
 .coming-soon-overlay {
-    border: 5px solid var(--jelly-bean);
+    border: 1px solid var(--card-border);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     width: 500px;
+    max-width: 90vw;
     height: 250px;
-    color: var(--jelly-bean);
-    background-color: white;
-    border-radius: 10px;
+    color: var(--text-muted);
+    background-color: var(--card-bg);
+    border-radius: 14px;
     font-size: xx-large;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow);
 }
 
 .construct-icon {

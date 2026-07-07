@@ -80,7 +80,7 @@ function ProjectsSection() {
     return (
         <section className="projects-section">
             {projects.length > 0 ? (
-                <div className="project-grid">
+                <div className="project-grid reveal-grid">
                     {projects.map((project, index) => (
                         <div className="project-grid-item" key={index}>
                             <ProjectDetails

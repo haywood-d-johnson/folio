@@ -11,7 +11,7 @@ export function ExperienceItem({ year, title, details, image }) {
                 <div className="experience-item-image">
                     <img
                         src={image}
-                        alt="Experienceitem"
+                        alt={`${details} diploma`}
                         width="350px"
                         height="250px"
                     />

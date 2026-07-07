@@ -21,18 +21,27 @@
 .project-details h3 {
     font-size: 18px;
     margin: 0.5rem;
-    color: var(--jelly-bean);
+    color: var(--accent);
 }
 
 .project-details p {
     font-size: 14px;
-    color: #666;
+    color: var(--text-muted);
+    line-height: 1.5;
 }
 
 .project-github_text {
     text-decoration: none;
-    color: var(--tan);
+    color: var(--warm);
     margin: 0.5rem;
+}
+
+.project-github_text:hover {
+    text-decoration: underline;
+}
+
+.project-stack {
+    margin: 0.5rem 0 0.25rem;
 }
 
 .project-title_container {

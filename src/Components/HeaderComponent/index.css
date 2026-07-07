@@ -16,7 +16,10 @@ header nav {
 
 .header-container {
     display: flex;
-    width: 1000px;
+    width: 100%;
+    max-width: var(--width-page);
+    box-sizing: border-box;
+    padding: 0 var(--gutter);
     justify-content: space-evenly;
     align-items: center;
 }
@@ -51,8 +54,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--tan);
-    color: white;
+    background-color: var(--accent);
+    color: var(--accent-contrast);
 }
 
 .nav_title {

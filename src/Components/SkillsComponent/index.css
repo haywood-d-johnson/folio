@@ -1,11 +1,12 @@
 .skills-container.horizontal {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     align-self: center;
-    padding: 1rem;
-    width: 1000px;
+    padding: 1rem var(--gutter);
+    max-width: var(--width-page);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .skills-grid-container {
@@ -14,15 +15,6 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-}
-
-.skills-column:nth-child(7) {
-    justify-self: center;
-}
-
-.skills-column:nth-child(8) {
-    grid-column: 3 / 3;
-    justify-self: center;
 }
 
 @media (max-width: 786px) {

@@ -1,35 +1,30 @@
 import ReactGA from "react-ga4";
 
 import React, { useState, useEffect} from 'react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faSun,
-    faMoon,
-} from "@fortawesome/free-solid-svg-icons";
 
 import HeaderComponent from "./Components/HeaderComponent";
 import RoundedImage from "./Components/ImageComponent";
 import Introduction from "./Components/IntroComponent";
 import SkillsContainer from "./Components/SkillsComponent";
 import DownloadCVButton from "./Components/ButtonComponent";
-import SocialMediaLinks from "./Components/SocialBarComponent";
+import StickyLinks from "./Components/StickyLinksComponent";
 import ProjectsSection from "./Components/ProjectsComponent";
 import {
     EducationSection,
     CertificationSection,
 } from "./Components/EducationComponent";
 import WorkExperienceSection from "./Components/WorkExperienceComponent/EducationComponent";
-import EventsSection from "./Components/EventsComponent";
-import FooterSection from "./Components/FooterComponent";
 
 import "./App.css";
 
 const measurement_id = process.env.REACT_APP_MEASUREMENT_ID;
 
-ReactGA.initialize(measurement_id);
+if (measurement_id) {
+    ReactGA.initialize(measurement_id);
+}
 
 function App() {
-    const [isNightMode, setIsNightMode] = useState(false);
+    const [isNightMode, setIsNightMode] = useState(true);
 
     useEffect(() => {
         document.body.className = isNightMode ? "night-mode" : "light-mode";
@@ -39,34 +34,46 @@ function App() {
         setIsNightMode(!isNightMode);
     };
 
+    useEffect(() => {
+        const targets = document.querySelectorAll(".reveal, .reveal-grid");
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("in-view");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+        );
+        targets.forEach((el) => observer.observe(el));
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div className={`App ${isNightMode ? "night" : ""}`}>
-            <div className="night_mode_btn_header-container">
-                <button className={`night_mode_btn ${isNightMode ? "sun" : "moon"}`} onClick={toggleNightMode}>
-                { isNightMode ? <FontAwesomeIcon icon={faSun} size="lg" /> : <FontAwesomeIcon icon={faMoon} size="lg" /> }
-                </button>
-            </div>
+            <StickyLinks nightMode={isNightMode} toggle={toggleNightMode} />
             <HeaderComponent nightMode={ isNightMode } />
-            <section id="about">
+            <section id="about" className="reveal">
                 <h1 className="about-header">Haywood D. Johnson</h1>
                 <RoundedImage
                     src="/avatar.png"
-                    alt="me or whatever"
+                    alt="Portrait of Haywood D. Johnson"
                     className="rounded-img"
                 />
                 <Introduction nightMode={ isNightMode } />
-                <SocialMediaLinks />
             </section>
-            <section id="skills">
+            <section id="skills" className="reveal">
                 <h2 className="skills-header">SKILLS</h2>
                 <SkillsContainer className="skills-section" />
                 <DownloadCVButton className="button-section" />
             </section>
-            <section id="projects">
+            <section id="projects" className="reveal">
                 <h2 className="projects-header">PROJECTS</h2>
                 <ProjectsSection />
             </section>
-            <section id="experience">
+            <section id="experience" className="reveal">
                 <h2 className="projects-header">EXPERIENCE</h2>
                 <div className="education-container">
                     <h3 className="education-header">EDUCATION</h3>
@@ -81,13 +88,9 @@ function App() {
                     <WorkExperienceSection nightMode={ isNightMode } />
                 </div>
             </section>
-            <section id="events">
-                <h2 className="projects-header">EVENTS</h2>
-                <EventsSection />
-            </section>
-            <section id="footer">
-                <FooterSection />
-            </section>
+            <footer className="site-copyright">
+                &copy; {new Date().getFullYear()} Haywood D. Johnson
+            </footer>
         </div>
     );
 }

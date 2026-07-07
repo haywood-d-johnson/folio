@@ -2,119 +2,71 @@ import React from "react";
 import SkillsColumn from "./SkillsColumnComponent";
 
 import {
-    faRobot,
-    faCloud,
     faCode,
-    faCubes,
-    faDatabase,
-    faCheck,
-    faChartLine,
-    faBrain,
+    faEye,
+    faScrewdriverWrench,
 } from "@fortawesome/free-solid-svg-icons";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 
 import "./index.css";
 
 function SkillsContainer() {
-    const CloudPlatformSkills = ["Microsoft Azure", "AWS", "GCP"];
-    const ProgrammingLanguageSkills = [
-        "JavaScript",
-        "TypeScript",
-        "PHP",
-        "Python",
-        "Java",
-        "C/C++",
+    const DotNetSkills = [
         "C#",
+        ".NET (Core & Framework)",
+        "ASP.NET Core",
+        "ASP.NET MVC",
+        "Web API / REST",
+        "SQL Server",
     ];
-    const FrameworksLibrariesSkills = [
+    const ReactSkills = [
         "React",
         "React Native",
+        "TypeScript",
+        "JavaScript",
         "Node.js",
-        "Express.js",
-        "jQuery",
-        "Django",
-        "Laravel",
-        ".NET Core/.NET Framework",
-        "Vue.js",
-        "WordPress",
-        "Arduino",
+        "Express",
+        "HTML / CSS",
     ];
-    const DatabaseManagementSkills = [
-        "Oracle RDBMS",
-        "SQL Server",
-        "MySQL",
-        "MSSQL",
-        "MongoDB",
+    const ComputerVisionSkills = [
+        "Python",
+        "OpenCV",
+        "TensorFlow",
+        "NumPy",
+        "Image Processing",
     ];
-    const TestingAutomationSkills = [
-        "Selenium",
-        "JMeter",
+    const ToolingSkills = [
+        "Git",
+        "Docker",
+        "CI/CD",
+        "AWS",
+        "Azure",
         "Postman",
-        "Jenkins",
-        "VMware",
-        "Mocha",
-        "Chai",
         "Jest",
     ];
-    const AnalyticsToolsSkills = [
-        "Google Analytics",
-        "Firebase Analytics",
-        "Docker",
-        "Git",
-        "CI/CD",
-        "Linux Development Environments",
-        "API & Data Integration Strategies",
-    ];
-    const EmbeddedSystemsSkills = [
-        "ARM microprocessors",
-        "Real-Time Operating Systems (RTOS)",
-        "ROS2",
-        "Arduino",
-        "Raspberry Pi",
-    ];
-    const MachineLearningSkills = ["TensorFlow", "OpenCV"];
 
     return (
         <div className="skills-grid-container">
-            <div className="skills-container horizontal">
-                <SkillsColumn
-                    icon={faCloud}
-                    title="Cloud Platforms"
-                    skills={CloudPlatformSkills}
-                />
+            <div className="skills-container horizontal reveal-grid">
                 <SkillsColumn
                     icon={faCode}
-                    title="Programming Languages"
-                    skills={ProgrammingLanguageSkills}
+                    title=".NET Development"
+                    skills={DotNetSkills}
                 />
                 <SkillsColumn
-                    icon={faCubes}
-                    title="Frameworks & Libraries"
-                    skills={FrameworksLibrariesSkills}
+                    icon={faReact}
+                    title="React & Frontend"
+                    skills={ReactSkills}
                 />
                 <SkillsColumn
-                    icon={faDatabase}
-                    title="Database Management"
-                    skills={DatabaseManagementSkills}
+                    icon={faEye}
+                    title="Computer Vision & ML"
+                    skills={ComputerVisionSkills}
                 />
                 <SkillsColumn
-                    icon={faCheck}
-                    title="Testing & Automation"
-                    skills={TestingAutomationSkills}
-                />
-                <SkillsColumn
-                    icon={faChartLine}
-                    title="Analytics & Tools"
-                    skills={AnalyticsToolsSkills}
-                />
-                <SkillsColumn
-                    icon={faBrain}
-                    title="MachineLearning & Artificial Intelligence"
-                    skills={MachineLearningSkills}
-                />
-                <SkillsColumn
-                    icon={faRobot}
-                    title="Embedded Systems"
-                    skills={EmbeddedSystemsSkills}
+                    icon={faScrewdriverWrench}
+                    title="Core Tooling & Platforms"
+                    skills={ToolingSkills}
                 />
             </div>
         </div>

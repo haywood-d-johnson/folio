@@ -10,3 +10,15 @@
 .night {
     color: var(--gallery);
 }
+
+.intro-link {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.intro-link:hover {
+    border-bottom-color: var(--accent);
+}

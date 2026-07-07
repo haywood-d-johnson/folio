@@ -7,19 +7,15 @@
 
 .work-experience-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
     gap: 20px;
-    margin: 2rem;
-    align-self: center;
+    width: 100%;
+    max-width: var(--width-page);
+    box-sizing: border-box;
+    padding: 0 var(--gutter);
+    margin: 2rem auto;
 }
-
-    .sun .experience-item .experience-item-grid .experience-item-title,.experience-item-details {
-        color: var(--thunder);
-    }
-
-    .sun .work-experience-item .work-experience-item-title, .work-experience-item-details{
-        color: var(--thunder);
-    }
 
 @media (max-width: 786px) {
     .work-experience-grid {

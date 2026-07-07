@@ -5,7 +5,6 @@ import {
     faToolbox,
     faRocket,
     faCertificate,
-    faCalendarDays,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 
@@ -66,12 +65,6 @@ function HeaderComponent({ nightMode }) {
                                 text="Experience"
                                 to="experience"
                             />
-                            <NavLink
-                                icon={faCalendarDays}
-                                text="Events"
-                                to="events"
-                            />
-
                         </nav>
                     </nav>
                 )}
@@ -126,18 +119,6 @@ function HeaderComponent({ nightMode }) {
                                     style={{ margin: "10px" }}
                                 />
                                 Experience
-                            </Link>
-                            <Link
-                                to="events"
-                                smooth
-                                duration={500}
-                                onClick={toggleMenu}
-                            >
-                                <FontAwesomeIcon
-                                    icon={faCalendarDays}
-                                    style={{ margin: "10px" }}
-                                />
-                                Events
                             </Link>
                         </nav>
                     </div>

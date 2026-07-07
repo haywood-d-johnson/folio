@@ -21,7 +21,7 @@ function EducationSection({ nightMode }) {
 
     return (
         <section className="experience-section">
-            <div className={`experience-grid ${nightMode ? "sun" : "moon"}`}>
+            <div className={`experience-grid reveal-grid ${nightMode ? "sun" : "moon"}`}>
                 {education.map((edu, index) => (
                     <ExperienceItem key={index} {...edu} />
                 ))}
@@ -33,30 +33,25 @@ function EducationSection({ nightMode }) {
 function CertificationSection({ nightMode }) {
     const education = [
         {
-            year: "July 2022",
-            title: "Data Structures and Algorithms Nanodegree Program",
-            details: "Udacity",
+            year: "2025",
+            title: "Google AI Essentials",
+            details: "Google",
         },
         {
-            year: "August 2022",
-            title: "ServiceNow/IT Support Apprenticeship",
-            details: "New Apprenticeship",
+            year: "2025",
+            title: "Google Project Management",
+            details: "Google",
         },
         {
-            year: "Dec. 2020",
-            title: "QA Engineer Bootcamp",
-            details: "Quality Camp",
-        },
-        {
-            year: "Feb. 2019",
-            title: "Program in Computer Science and Web Development",
-            details: "Bloom Institute of Technology",
+            year: "2024",
+            title: "Google IT Support",
+            details: "Google",
         },
     ];
 
     return (
         <section className="experience-section">
-            <div className={`experience-grid ${nightMode ? "sun" : "moon"}`}>
+            <div className={`experience-grid reveal-grid ${nightMode ? "sun" : "moon"}`}>
                 {education.map((edu, index) => (
                     <ExperienceItem key={index} {...edu} />
                 ))}

@@ -12,7 +12,7 @@
 
 ## Introduction
 
-<p align="center">Please visit: https://www.hdjohnson-dev.online/ </p>
+<p align="center">Please visit: https://hdjohnson.dev/ </p>
 
 Simple, responsive portfolio page.
 
@@ -107,7 +107,7 @@ Simple, responsive portfolio page.
 
 ## Todo
 
--   [ ] Dark Mode Switch
+-   [x] Dark Mode Switch
 
 
 
