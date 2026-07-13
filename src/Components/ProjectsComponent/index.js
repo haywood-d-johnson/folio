@@ -22,11 +22,12 @@ function ProjectsSection() {
                 "A privacy-focused mood tracking app that helps users monitor their emotional well-being through daily check-ins. Features local-first data storage, cross-platform compatibility, and intuitive mood visualization.",
             techStack: [
                 "TypeScript",
-                "React Native",
-                "Expo",
+                "React",
+                "FastAPI",
                 "SQLite",
-                "IndexedDB",
-                "Context API",
+                "Docker",
+                "JWT",
+                "Python"
             ],
         },
         {
