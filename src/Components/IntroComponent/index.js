@@ -40,6 +40,19 @@ function Introduction({ nightMode }) {
                     haywood.d.johnson@gmail.com
                 </a>
             </div>
+            <div className={`intro ${nightMode ? "night" : ""}`}>
+                Off the clock, I grow things &mdash; plants, and the tools
+                around them &mdash; over at{` `}
+                <a
+                    href="https://tbp-links.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="intro-link"
+                >
+                    Tall, Black &amp; Propagated
+                </a>
+                .
+            </div>
         </div>
     );
 }

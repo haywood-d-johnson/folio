@@ -18,6 +18,32 @@
     text-align: center;
 }
 
+.project-status {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 0.24rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+}
+
+.project-status--live {
+    color: var(--locust);
+    background: rgba(163, 177, 138, 0.14);
+    border-color: rgba(163, 177, 138, 0.4);
+}
+
+.project-status--wip {
+    color: #cba26b;
+    background: rgba(203, 162, 107, 0.14);
+    border-color: rgba(203, 162, 107, 0.4);
+}
+
 .project-details h3 {
     font-size: 18px;
     margin: 0.5rem;
@@ -30,14 +56,30 @@
     line-height: 1.5;
 }
 
-.project-github_text {
-    text-decoration: none;
-    color: var(--warm);
-    margin: 0.5rem;
+.project-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin: 0.5rem 0;
 }
 
-.project-github_text:hover {
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: var(--warm);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.project-link:hover {
     text-decoration: underline;
+}
+
+.project-links .project-link svg {
+    color: var(--warm);
 }
 
 .project-stack {
