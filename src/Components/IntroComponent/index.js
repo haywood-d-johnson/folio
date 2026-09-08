@@ -10,8 +10,9 @@ function Introduction({ nightMode }) {
             </div>
 
             <div className={`intro ${nightMode ? "night" : ""}`}>
-                9+ years building web apps, APIs, and cloud systems &mdash; and
-                authoring reference solutions for AI model training.
+                9+ years building enterprise applications, cloud services, and
+                AI-assisted developer tooling across ASP.NET Core, React, and
+                AWS &mdash; integrating LLMs into real production workflows.
             </div>
 
             <div className={`intro ${nightMode ? "night" : ""}`}>
