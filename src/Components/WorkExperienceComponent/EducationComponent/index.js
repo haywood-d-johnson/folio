@@ -11,7 +11,7 @@ function WorkExperienceSection({ nightMode }) {
             title: "Software Developer",
             details: "Packless Industries",
             summary:
-                "Building custom AL extensions for Dynamics 365 Business Central and an ASP.NET MVC front end powering warehouse ERP operations.",
+                "Dynamics 365 Business Central (AL) extensions and resilient ASP.NET Core services for manufacturing — plus an internal engineering platform where I integrated Anthropic Claude to analyze bugs, generate fixes, and open reviewable Git branches.",
         },
         {
             syear: "November 2025",
@@ -19,7 +19,7 @@ function WorkExperienceSection({ nightMode }) {
             title: "AI Data & Software Engineering Contributor",
             details: "Snorkel AI",
             summary:
-                "Authoring benchmark-quality reference solutions across Python and JavaScript to set the correctness bar for AI coding evaluations.",
+                "Building benchmark-quality reference solutions and assessing AI-generated code for correctness and edge cases — defining the engineering standards used to measure LLM coding quality.",
         },
         {
             syear: "November 2024",
