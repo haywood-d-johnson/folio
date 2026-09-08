@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.css";
 
-function SkillsColumn({ title, skills, description, toolsList, icon }) {
+function SkillsColumn({ title, skills, learning, icon }) {
     return (
         <div className="skills-column">
             <FontAwesomeIcon icon={icon} className="fa-icon" size="2x" />
@@ -14,6 +14,14 @@ function SkillsColumn({ title, skills, description, toolsList, icon }) {
                     </span>
                 ))}
             </div>
+            {learning && (
+                <p className="skills-learning">
+                    <span className="skills-learning-label">
+                        Currently learning
+                    </span>
+                    {learning}
+                </p>
+            )}
         </div>
     );
 }
