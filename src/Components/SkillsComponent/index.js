@@ -3,7 +3,7 @@ import SkillsColumn from "./SkillsColumnComponent";
 
 import {
     faCode,
-    faEye,
+    faBrain,
     faScrewdriverWrench,
 } from "@fortawesome/free-solid-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
@@ -28,12 +28,13 @@ function SkillsContainer() {
         "Express",
         "HTML / CSS",
     ];
-    const ComputerVisionSkills = [
+    const AiSkills = [
+        "LLM Integration",
+        "Anthropic Claude API",
+        "OpenAI API",
+        "AI Developer Tooling",
+        "Prompt Engineering",
         "Python",
-        "OpenCV",
-        "TensorFlow",
-        "NumPy",
-        "Image Processing",
     ];
     const ToolingSkills = [
         "Git",
@@ -59,9 +60,10 @@ function SkillsContainer() {
                     skills={ReactSkills}
                 />
                 <SkillsColumn
-                    icon={faEye}
-                    title="Computer Vision & ML"
-                    skills={ComputerVisionSkills}
+                    icon={faBrain}
+                    title="AI / LLM Integration"
+                    skills={AiSkills}
+                    learning="Computer Vision with OpenCV & TensorFlow — building it into Root Reader."
                 />
                 <SkillsColumn
                     icon={faScrewdriverWrench}
